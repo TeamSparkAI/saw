@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 600" font-family="Arial, Helvetica, sans-serif">
+  <style>
+    .box { fill: #D7E3F4; stroke: #000; stroke-width: 1; }
+    .title { font-weight: bold; font-size: 14px; text-anchor: middle; fill: #111; }
+    .subtitle { font-size: 11px; text-anchor: middle; fill: #333; }
+    .bullet { font-size: 12px; fill: #222; text-anchor: start; }
+    .arrow-shaft { stroke: #8a8a8a; stroke-width: 2.5; stroke-linecap: butt; fill: none; }
+    .arrow-head { fill: #8a8a8a; }
+  </style>
+
+  <!-- Equal 24px gap between boxes; box sizes unchanged -->
+
+  <!-- Box 1 -->
+  <rect class="box" x="40" y="20" width="280" height="56" rx="3"/>
+  <text x="180" y="46" class="title">Collaborative Spec Creation</text>
+  <text x="180" y="64" class="subtitle">(agent chat)</text>
+
+  <!-- Box 2 -->
+  <rect class="box" x="40" y="100" width="280" height="56" rx="3"/>
+  <text x="180" y="126" class="title">Agent Implements Spec</text>
+  <text x="180" y="144" class="subtitle">(one shot)</text>
+
+  <!-- Box 3 -->
+  <rect class="box" x="40" y="180" width="280" height="132" rx="3"/>
+  <text x="180" y="206" class="title">Review</text>
+  <text x="180" y="224" class="subtitle">(agent assisted)</text>
+  <g transform="translate(180, 0)">
+    <text x="-82" y="248" class="bullet">• Review Code</text>
+    <text x="-82" y="266" class="bullet">• Review Tests</text>
+    <text x="-82" y="284" class="bullet">• Run pre-commit checks</text>
+  </g>
+
+  <!-- Box 4 -->
+  <rect class="box" x="40" y="336" width="280" height="58" rx="3"/>
+  <text x="180" y="360" class="title">Create PR</text>
+  <text x="180" y="378" class="title">Request Agent PR Review</text>
+
+  <!-- Box 5 -->
+  <rect class="box" x="40" y="418" width="280" height="76" rx="3"/>
+  <text x="180" y="444" class="title">
+    <tspan x="180" dy="0">Review and Implement</tspan>
+    <tspan x="180" dy="18">PR Feedback</tspan>
+  </text>
+  <text x="180" y="478" class="subtitle">(agent assisted)</text>
+
+  <!-- Box 6 -->
+  <rect class="box" x="40" y="518" width="280" height="56" rx="3"/>
+  <text x="180" y="550" class="title">Request Human PR Review</text>
+
+  <!-- Arrows: shaft from upper box bottom; head ~3× previous (~15px tall, ~11px wide) -->
+  <g aria-hidden="true">
+    <line class="arrow-shaft" x1="180" y1="76" x2="180" y2="85"/>
+    <path class="arrow-head" d="M 174.25 85 L 185.75 85 L 180 100 Z"/>
+    <line class="arrow-shaft" x1="180" y1="156" x2="180" y2="165"/>
+    <path class="arrow-head" d="M 174.25 165 L 185.75 165 L 180 180 Z"/>
+    <line class="arrow-shaft" x1="180" y1="312" x2="180" y2="321"/>
+    <path class="arrow-head" d="M 174.25 321 L 185.75 321 L 180 336 Z"/>
+    <line class="arrow-shaft" x1="180" y1="394" x2="180" y2="403"/>
+    <path class="arrow-head" d="M 174.25 403 L 185.75 403 L 180 418 Z"/>
+    <line class="arrow-shaft" x1="180" y1="494" x2="180" y2="503"/>
+    <path class="arrow-head" d="M 174.25 503 L 185.75 503 L 180 518 Z"/>
+  </g>
+</svg>

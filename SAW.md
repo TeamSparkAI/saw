@@ -144,7 +144,7 @@ I will discuss a modification to the workflow for handling larger scope projects
 
 In the Spec-Agent Workflow (SAW) we collaborate with an agent to create a spec, have the agent implement the spec, review the implementation, create a PR, have a different agent review the PR, collaborate with our agent to resolve the PR feedback, and then ask for a human review.  It looks like this:
 
-[SVG goes here]
+<img src="assets/flowchart.svg" alt="Spec-Agent Workflow (SAW) flowchart" width="360" />
 
 You might reasonably wonder whether humans really need to be involved in all of these phases, and what I will say is that I currently find things that need to be improved on a consistent basis in the generated code, the PR review suggestions, and the code generated to address them. The quality of the code produced directly from the spec is nowhere close to being something that could be deployed on a production system where you care about quality, reliability, scale, and compliance. Even the quality of the PR review suggested changes (which are generally the smallest scope and highest quality) are rarely acceptable as given and need some guidance and polish to meet my standards. Tooling improvements may help, and the AI assistants may continue to get better, but right now a human engineer adds value, and in my opinion, is still required to produce production-ready code for "real software" in all of these phases.
 
@@ -370,13 +370,13 @@ Following are some examples of specific tasks completed against an open source p
 
 **Process and Artifacts:**
 
-Session 1: Interactive spec creation
+Session 1: [Interactive spec creation](artifacts/logging_and_error_handling_spec.md)
 
-Resulting spec (54 lines)
+[Resulting spec (54 lines)](artifacts/logging-file-logger-spec.md)
 
 Generate code
 
-Session 2: Review of implementation
+Session 2: [Review of implementation](artifacts/logging_and_error_handling_impl.md)
 
 Submit PR  
 [https://github.com/modelcontextprotocol/inspector/pull/1158](https://github.com/modelcontextprotocol/inspector/pull/1158) 
@@ -386,7 +386,7 @@ Duration: 2 minutes, 10 seconds
 Cost: $0.36  
 Found: 2 issues, 3 minor notes.  Both issues were valid.
 
-Session 3: Addressing PR review feedback
+Session 3: [Addressing PR review feedback](artifacts/logging_and_error_handling_review.md)
 
 ### Large Spec Example
 
