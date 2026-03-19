@@ -168,9 +168,7 @@ This process takes anywhere from a few minutes for a simple feature or bug fix, 
 
 The next step is to have the agent one-shot the spec. I use a simple prompt for this, something like:
 
-> ```
-> Implement the spec, including unit tests. Do not stop until the spec is fully implemented. Flag any issues or changes from the spec in your implementation when complete.
-> ```
+<blockquote style="font-family: ui-monospace, monospace;"><pre style="white-space: pre-wrap; margin: 0; border: none; background: none;">Implement the spec, including unit tests. Do not stop until the spec is fully implemented. Flag any issues or changes from the spec in your implementation when complete.</pre></blockquote>
 
 ### Review Code
 
@@ -268,13 +266,7 @@ I would not invest in trying to improve agent performance through context or too
 
 For example, I was seeing a few consistent TypeScript issues, so I created the following AGENTS.md file:
 
-> ```
-> This project uses TypeScript best practices.
->
-> When Zod schemas are present, use Zod to produce a typed object.
->
-> Never use the "any" type; use "unknown" instead. You must narrow unknown variables using type guards or property checks before accessing them.
-> ```
+<blockquote style="font-family: ui-monospace, monospace;"><pre style="white-space: pre-wrap; margin: 0; border: none; background: none;">This project uses TypeScript best practices.<br/><br/>When Zod schemas are present, use Zod to produce a typed object.<br/><br/>Never use the "any" type; use "unknown" instead. You must narrow unknown variables using type guards or property checks before accessing them.</pre></blockquote>
 
 I didn't need to detail what TypeScript "best practices" were, I just told it to use them and gave it a couple of pointers for things that I'd seen it consistently do wrong.
 
