@@ -366,54 +366,7 @@ I believe that the Spec-Agent Workflow (SAW) and methodologies like it strike th
 
 ## Appendix
 
-Following are some examples of specific tasks completed against an open source project (MCP Inspector) using SAW, along with artifacts.
+Following are two worked examples of tasks completed against an open source project (MCP Inspector) using SAW, with artifacts and PRs:
 
-### Small Spec Example
-
-**Task:** Logging Updates
-
-**Summary:** Issue with logging errors on early exit led to discovery of issues with logging initialization, consistency of logging config across clients, and other minor startup and logging issues.
-
-**Scope:** 1 hour (human \+ agent working time), 20 files changes, \+178/-55 lines of code
-
-**Process and Artifacts:**
-
-Session 1: [Interactive spec creation](artifacts/logging_and_error_handling_spec.md)
-
-[Resulting spec (54 lines)](artifacts/logging-file-logger-spec.md)
-
-Generate code
-
-Session 2: [Review of implementation](artifacts/logging_and_error_handling_impl.md)
-
-Submit PR  
-[https://github.com/modelcontextprotocol/inspector/pull/1158](https://github.com/modelcontextprotocol/inspector/pull/1158) 
-
-Claude PR Review:  
-Duration: 2 minutes, 10 seconds  
-Cost: $0.36  
-Found: 2 issues, 3 minor notes.  Both issues were valid.
-
-Session 3: [Addressing PR review feedback](artifacts/logging_and_error_handling_review.md)
-
-### Large Spec Example
-
-**Task:** MCP Inspector launcher consolidation
-
-**Summary:** Moderate size refactor of all clients for consistent launching experience (including new launcher app) and shared configuration processing. Launching and config code streamlined and greatly simplified, including refactoring of processes that used spawn \+ environment vars to launch sub-processes (in the case of the web app, at multiple levels).  
-
-**Scope:** 16 hours (human \+ agent working time), 221 files changes, \+2,745/-7,710 lines of code
-
-**Process and Artifacts:**
-
-Spec:  
-[launcher-config-consolidation-plan.md](https://github.com/BobDickinson/inspector/blob/c181e8dde1dd63cbc06c7274bf188630dae1125b/docs/launcher-config-consolidation-plan.md)  
-129 lines
-
-PR:  
-[https://github.com/modelcontextprotocol/inspector/pull/1139](https://github.com/modelcontextprotocol/inspector/pull/1139)
-
-Claude PR Review:  
-Duration: 3 minutes, 8 seconds  
-Cost: $1.63  
-Found: 7 issues, 3 minor notes (all valid except one of the minor notes). Suggestions adopted verbatim for 5 of the 7 issues. The other two issues resulted in fixes that were different from those suggested.  
+- **[Small spec example](docs/small-spec-example.md)** — Logging updates (1 hour, 20 files, +178/-55 lines)
+- **[Large spec example](docs/large-spec-example.md)** — Launcher consolidation (16 hours, 221 files, +2,745/-7,710 lines)
