@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/saw-header.svg" alt="SAW — Spec-Agent Workflow" width="640" />
+</p>
+
 # AI Assisted Development: Go Faster, Safely with Spec-Agent Workflow (SAW)
 
 [Bob Dickinson](https://github.com/BobDickinson), March 2026
@@ -132,6 +136,8 @@ This is not to be confused with Spec-Driven Development (SDD), where the specifi
 
 When you hear the word specification you might be thinking about long, detailed documents painfully assembled over months to describe some technical plan or implementation in excruciating detail. That is not what we mean here. For our purposes a spec is a document, typically in markdown format, that describes a unit of work or a desired system state. For a simple task these documents may be as small as a single paragraph, and for more complex tasks they may be as long as 100 to 200 lines of text (I've taken some fairly large bites at the apple and never had a spec longer than 325 lines of text). They are mostly focussed on new work or desired outcomes, sometimes including the current state of the system, and usually without much in the way of specific implementation plans or details (though there can be exceptions, as I will explain below). A human should be able to read and understand a spec in at most a few minutes, even without a deep background in its subject matter.
 
+See the [Appendix](#appendix) for sample specs.
+
 ## Choose an Appropriate Scope
 
 When possible I like to work in units that approximate what I used to be able to do by hand in one sitting (roughly four hours). With the SAW workflow, that often results in PRs completed in one to two hours. In a one hour process I would expect to spend between 5 and 15 minutes on spec creation, 30-40 minutes on code review (including interactive testing and unit test review), and 10-15 minutes on resolving PR review issues.
@@ -144,7 +150,9 @@ I will discuss a modification to the workflow for handling larger scope projects
 
 In the Spec-Agent Workflow (SAW) we collaborate with an agent to create a spec, have the agent implement the spec, review the implementation, create a PR, have a different agent review the PR, collaborate with our agent to resolve the PR feedback, and then ask for a human review.  It looks like this:
 
-<img src="assets/flowchart.svg" alt="Spec-Agent Workflow (SAW) flowchart" width="360" />
+<p align="center">
+  <img src="assets/flowchart.svg" alt="Spec-Agent Workflow (SAW) flowchart" width="360" />
+</p>
 
 You might reasonably wonder whether humans really need to be involved in all of these phases, and what I will say is that I currently find things that need to be improved on a consistent basis in the generated code, the PR review suggestions, and the code generated to address them. The quality of the code produced directly from the spec is nowhere close to being something that could be deployed on a production system where you care about quality, reliability, scale, and compliance. Even the quality of the PR review suggested changes (which are generally the smallest scope and highest quality) are rarely acceptable as given and need some guidance and polish to meet my standards. Tooling improvements may help, and the AI assistants may continue to get better, but right now a human engineer adds value, and in my opinion, is still required to produce production-ready code for "real software" in all of these phases.
 
@@ -155,8 +163,6 @@ When I first started using this workflow I wrote the specs, or at least the firs
 At some point fairly early in the process, I ask the agent to create a spec document based on what we have discussed up to that point. As we work through issues, I will have the agent update the spec periodically. We are done when I have a spec that I could hand to a junior engineer and expect them to be able to implement it mostly correctly without having to come back to me for more information. I commit the spec to version control (if you are using PR branches, this will be the first commit on the branch).
 
 This process takes anywhere from a few minutes for a simple feature or bug fix, to maybe a couple of hours for a large or complex piece of work. 
-
-See the Appendix for an example of one of these sessions.
 
 ### Agent Implements Spec
 
