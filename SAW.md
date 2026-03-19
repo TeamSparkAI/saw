@@ -2,7 +2,7 @@
 
 [Bob Dickinson](https://github.com/BobDickinson), March 2026
 
-**In this paper I will show you how to leverage AI using an approach called Spec-Agent Workflow (SAW) to get a 2x to 4x engineering productivity improvement with no sacrifices in key areas like tech debt, quality, reliability, security, compliance, and others. This is not vibe coding; there is no AI slop involved; this is leveraging AI tools and best practices to build high-quality software better and faster than before.**
+**In this guide I will show you how to leverage AI using an approach called Spec-Agent Workflow (SAW) to get a 2x to 4x engineering productivity improvement with no sacrifices in key areas like tech debt, quality, reliability, security, compliance, and others. This is not vibe coding; there is no AI slop involved; this is leveraging AI tools and best practices to build high-quality software better and faster than before.**
 
 # Before We Unleash the Agents
 

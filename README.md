@@ -10,7 +10,7 @@ A concrete approach to get **2x–4x engineering productivity** with AI-assisted
 - **The SAW workflow** — Collaborative spec → agent implementation → review (code, tests, pre-commit) → PR → agent PR review → address feedback → human review
 - **Process variations** — Research, multi-phase work, specs as artifacts
 - **Tooling** — AGENTS.md, skills, MCP servers, sub-agents (when and how to use them, what to watch out for)
-- **Operationalization** — Expanding the AI boundary, safety and sandboxing, leveraging juniors, agent diverity, adapating for your use
+- **Operationalization** — Expanding the AI boundary, safety and sandboxing, leveraging juniors, agent diversity, adapting for your use
 - **Appendix** — Worked examples with real artifacts and PRs
 
 **[Read the full guide →](SAW.md)**
