@@ -1,6 +1,6 @@
 # AI Assisted Development: Go Faster, Safely with Spec-Agent Workflow (SAW)
 
-Bob Dickinson, March 2026
+[Bob Dickinson](https://github.com/BobDickinson), March 2026
 
 **In this paper I will show you how to leverage AI using an approach called Spec-Agent Workflow (SAW) to get a 2x to 4x engineering productivity improvement with no sacrifices in key areas like tech debt, quality, reliability, security, compliance, and others. This is not vibe coding; there is no AI slop involved; this is leveraging AI tools and best practices to build high-quality software better and faster than before.**
 
@@ -162,7 +162,9 @@ See the Appendix for an example of one of these sessions.
 
 The next step is to have the agent one-shot the spec. I use a simple prompt for this, something like:
 
-`Implement the spec, including unit tests. Do not stop until the spec is fully implemented. Flag any issues or changes from the spec in your implementation when complete.`
+> ```
+> Implement the spec, including unit tests. Do not stop until the spec is fully implemented. Flag any issues or changes from the spec in your implementation when complete.
+> ```
 
 ### Review Code
 
@@ -260,11 +262,13 @@ I would not invest in trying to improve agent performance through context or too
 
 For example, I was seeing a few consistent TypeScript issues, so I created the following AGENTS.md file:
 
-`This project uses TypeScript best practices.`
-
-`When Zod schemas are present, use Zod to produce a typed object.`
-
-`Never use the "any" type; use "unknown" instead. You must narrow unknown variables using type guards or property checks before accessing them.`
+> ```
+> This project uses TypeScript best practices.
+>
+> When Zod schemas are present, use Zod to produce a typed object.
+>
+> Never use the "any" type; use "unknown" instead. You must narrow unknown variables using type guards or property checks before accessing them.
+> ```
 
 I didn't need to detail what TypeScript "best practices" were, I just told it to use them and gave it a couple of pointers for things that I'd seen it consistently do wrong.
 
@@ -350,11 +354,15 @@ As you have seen, this process uses a variety of agents, from external research 
 
 The process and workflow outlined here are intended to be a starting point. As with any engineering methodology, you will need to adapt it to the challenges, culture, tooling, and technology of your organization. Even if you start by adopting it as specified, once you get a feel for how it's working you should look to optimize it and extend it to make it work for you. Keep what works, throw out what doesn't, and add to it in whatever ways make sense.
 
+If you like, you can fork this repo and make your process updates in your fork.
+
+## Feedback Welcome
+
+Participation in [Discussions](https://github.com/TeamSparkAI/saw/discussions) in this repo is appreciated. Tell us if you are using SAW, how it's working for you, and how you've changed it. Raise issues or concerns. Let us know if it doesn't work for you, or what you do instead.
+
 ## Conclusion
 
 I believe that the Spec-Agent Workflow (SAW) and methodologies like it strike the right balance of AI productivity gains and safety, letting organizations move faster without breaking things.
-
-## 
 
 ## Appendix
 
@@ -399,7 +407,7 @@ Session 3: [Addressing PR review feedback](artifacts/logging_and_error_handling_
 **Process and Artifacts:**
 
 Spec:  
-[https://github.com/BobDickinson/inspector/blob/c181e8dde1dd63cbc06c7274bf188630dae1125b/docs/launcher-config-consolidation-plan.md](https://github.com/BobDickinson/inspector/blob/c181e8dde1dd63cbc06c7274bf188630dae1125b/docs/launcher-config-consolidation-plan.md)  
+[launcher-config-consolidation-plan.md](https://github.com/BobDickinson/inspector/blob/c181e8dde1dd63cbc06c7274bf188630dae1125b/docs/launcher-config-consolidation-plan.md)  
 129 lines
 
 PR:  
