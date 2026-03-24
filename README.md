@@ -20,3 +20,8 @@ A concrete approach to get **2x–4x engineering productivity** with AI-assisted
 - **Appendix** — Worked examples with real artifacts and PRs
 
 **[Read the full guide →](SAW.md)**
+
+## Other Resources
+
+[How to Do AI-Assisted Engineering](https://newsletter.eng-leadership.com/p/how-to-do-ai-assisted-engineering)
+15 experienced engineers and engineering leaders share their real-world experiences with AI-assisted engineering.
