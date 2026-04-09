@@ -23,5 +23,12 @@ A concrete approach to get **2x–4x engineering productivity** with AI-assisted
 
 ## Other Resources
 
+[SDLC for Agentic AI Engineering](https://medium.com/@brettluelling/sdlc-for-agentic-ai-engineering-5813abfdbc12)
+Includes referenced Claude skills.
+
 [How to Do AI-Assisted Engineering](https://newsletter.eng-leadership.com/p/how-to-do-ai-assisted-engineering)
 15 experienced engineers and engineering leaders share their real-world experiences with AI-assisted engineering.
+
+[My Practical Approach for Reviewing AI-Generated Code - Vinod Pal](https://medium.com/@vndpal/my-practical-approach-for-reviewing-ai-generated-code-268db27f3af8)
+
+[AI Is a Revenue Multiplier. So Why the Obsession with Cost Cuts?](https://anatoly.com/blog/010)
